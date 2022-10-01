@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;800;900&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+:root {
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-cyan: hsl(167, 40%, 24%);
+    --dark-blue: hsl(198, 62%, 26%);
+    --dark-soft-cyan: hsl(168, 34%, 41%);
+
+    --dark: hsl(212, 27%, 19%);
+    --soft-dark: hsl(213, 9%, 39%);
+    --gray: hsl(232, 10%, 55%);
+    --soft-gray: hsl(210, 4%, 67%);
+    --white: #fff;
+
+    --font-family-barlow: 'Barlow', sans-serif;
+    --font-family-fraunces: 'Fraunces', serif;
+}
+
+/* Global CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+p{
+    font-size: 18px;
+}
+.font-family-barlow{
+    font-family: var(--font-family-barlow);
+}
+.font-family-fraunces{
+    font-family: var(--font-family-fraunces);
+}
+
+/* Header Section */
+header {
+    min-height: 90vh;
+    background: url(/images/desktop/image-header.jpg) no-repeat 50%;
+    background-size: cover;
+    position: relative;
+}
+header .hero {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    padding: 30px 60px;
+}
+header .hero h1 {
+    grid-column: span 6;
+    font-size: 1.5em;
+    color: var(--white);
+    font-weight: 800;
+}
+header nav {
+    grid-column: span 6;
+    justify-self: end;
+}
+header .hero .menu {
+    display: none;
+    cursor: pointer;
+}
+header nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+header nav a.active {
+    padding: 0 7px;
+    border-radius: 28px;
+    color: var(--dark);
+    font-family: var(--font-family-fraunces);
+    background-color: var(--white);
+    border: 10px solid var(--white);
+    transition: .1s;
+}
+header nav a.active:hover {
+    background-color: #70CEFB;
+    border-color: #70CEFB;
+    color: var(--white);
+}
+header > h1 {
+    color: var(--white);
+    font-size: 3em;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-align: center;
+}
+header > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+/* Main Section */
+
+
+/* Footer Section */
+
+/* Responsive */
+
+@media screen and (max-width: 1080px) {
+    header > h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    header > h1 {
+        font-size: 2em;
+    }
+    header nav a {
+        display: none;
+    }
+    header .hero .menu {
+        width: 30px;
+        display: block;
+        grid-column: 12;
+        grid-row: 1;
+        justify-self: end;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        background: url(/images/mobile/image-header.jpg) no-repeat 50%;
+        background-size: cover;
+    }
+    header .hero {
+        padding: 30px;
+    }
+}
