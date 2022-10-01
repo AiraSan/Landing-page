@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Boxicon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- Custom Css -->
   <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
@@ -22,12 +25,12 @@
       <img src="/images/icon-hamburger.svg" class="menu" alt="Menu">
     </section>
     <h1 class="font-family-fraunces">We are creatives</h1>
-    <img src="/images/icon-arrow-down.svg" alt="Arrow">
+    <a href="#service"><img src="/images/icon-arrow-down.svg" alt="Arrow"></a>
   </header>
 
   <main>
 
-    <section class="services">
+    <section class="services" id="service">
       <div class="grid">
         <div class="text">
           <h2 class="font-family-fraunces">Transform your band</h2>
@@ -116,21 +119,26 @@
 
   <footer>
     <h2>sunnyside</h2>
-    <div>
+    <div class="links font-family-barlow">
       <a href="#">About</a>
       <a href="#">Services</a>
       <a href="#">Projects</a>
     </div>
     <div class="footer-icons">
-      <img src="/images/icon-facebook.svg" alt="">
+      <a href="#"><i class='bx bxl-facebook-square'></i></a>
+      <a href="#"><i class='bx bxl-instagram'></i></a>
+      <a href="#"><i class='bx bxl-twitter' ></i></a>
+      <a href="#"><i class='bx bxl-pinterest' ></i></a>
+      <!-- <img src="/images/icon-facebook.svg" alt="">
       <img src="/images/icon-instagram.svg" alt="">
       <img src="/images/icon-twitter.svg" alt="">
-      <img src="/images/icon-pinterest.svg" alt="">
+      <img src="/images/icon-pinterest.svg" alt=""> -->
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/airasan" class="font-family-fraunces">Zarmani</a>.
     </div>
   </footer>
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+  
 </body>
 </html>
